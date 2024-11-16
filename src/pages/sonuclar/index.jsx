@@ -1,7 +1,8 @@
+
 export default function Sonuclar() {
     return (
-        <div>
-            <h1>Sonuclar</h1>
+        <div className="flex flex-col justify-center items-center h-screen">
+            <h1 className="mb-4 text-lg text-white">Sonraki Çekiliş</h1>
         </div>
-    )
+    );
 }

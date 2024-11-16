@@ -150,7 +150,9 @@ function Footer() {
                     </div>
                     <div id="separator-line" className="justify-center items-center bg-white mb-0 w-full h-[1px] text-center" />
                     <p className="lg:mt-2 text-center">
-                        Loto Piyango Online, Loto Piyango Online’a ait olan tüm metin, grafik görselleri ve yazılımlarla ilişkili tüm telif haklarını elinde tutmaktadır. <br /> Loto Piyango Online’ın izni olmaksızın, bu web sitesindeki hiçbir metin, yazılım ve grafik görseli aktaramaz, tadil edemez, kullanamaz ya da başka bir şekilde değiştiremezsiniz.
+                        Loto Piyango Online, Loto Piyango Online’a ait olan tüm metin, grafik görselleri ve yazılımlarla ilişkili tüm telif haklarını elinde tutmaktadır. <br /> Loto Piyango Online’ın izni olmaksızın, bu web sitesindeki hiçbir metin, yazılım ve grafik görseli aktaramaz, tadil edemez, kullanamaz ya da başka bir şekilde değiştiremezsiniz.<br />
+                        Loto Piyango Online tamamen eğitim amaçlı içerikler barındıran bir web sitesidir, aksi kullanımlardan doğacak hiçbir suçu kabul etmez, bu tür girişimleri önermez. <br />Kumar ve bahis gibi davranışlar, profesyonel sağlık yardımı gerektirecek bağımlılıklara sebep olabilir.
+                        <br />Alkol ve sigara gibi; kumar, bahis, loto, piyango vs. alışkanlıklar dostunuz değildir, daima kasa kazanır.
                     </p>
                     <div>
                     </div>

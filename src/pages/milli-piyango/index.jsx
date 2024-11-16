@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet"
 import millipiyango from "~/assets/images/millipiyango.svg"
 import millipiyango1 from "~/assets/images/millipiyango1.svg"
+import NextDraw from "./components/next-draw"
 
 function MilliPiyango() {
 
@@ -18,6 +19,7 @@ function MilliPiyango() {
                 </div>
                 <div id="card-2" className="bg-[#f8f8f8] shadow-lg lg:w-[300px] h-full">
                     <h1>SONRAKİ ÇEKİLİŞE KALAN</h1>
+                    <NextDraw />
 
                 </div>
                 <div id="card-3" className="bg-[#f8f8f8] shadow-lg mx-5 lg:w-[300px] h-full">
@@ -35,6 +37,9 @@ function MilliPiyango() {
                         <button className="relative before:absolute flex justify-center items-center bg-white before:bg-transparent shadow-none hover:shadow-xl hover:shadow-blue-700 mx-1 px-4 py-2 rounded-full before:rounded-full hover:rounded-full w-auto before:w-0 hover:before:w-56 h-auto before:h-0 hover:before:h-56 font-sans transition-all duration-300 before:duration-500 overflow-hidden before:ease-out">Süperstar Nedir</button>
                     </div>
                 </div>
+            </div>
+            <div>
+                <h1>MİLLİ PİYANGO HER AYIN 9. VE 29. GÜNLERİ SAAT 17:30'DA ÇEKİLİR</h1>
             </div>
         </>
     )

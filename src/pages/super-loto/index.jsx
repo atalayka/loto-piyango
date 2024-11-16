@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import superloto from "~/assets/images/superloto.svg";
 import superloto1 from "~/assets/images/superloto1.svg";
+import NextDraw from "./components/next-draw";
 function SuperLoto() {
     return (
         <div className="w-full h-full">
@@ -16,6 +17,7 @@ function SuperLoto() {
                 </div>
                 <div id="card-2" className="bg-[#f8f8f8] shadow-lg lg:w-[300px] h-full">
                     <h1>SONRAKİ ÇEKİLİŞE KALAN</h1>
+                    <NextDraw />
 
                 </div>
                 <div id="card-3" className="bg-[#f8f8f8] shadow-lg mx-5 lg:w-[300px] h-full">
@@ -25,14 +27,17 @@ function SuperLoto() {
             <div id="container" className="flex flex-row items-center bg-[#ff5100] mx-[20px] px-[24px] rounded-t w-auto h-[5rem]">
                 <div id="inner-container" className="flex flex-row justify-between items-center content-center w-full">
                     <div id="logo-container" className="justify-start w-fit">
-                    <img src={superloto1} alt="superloto" />
+                        <img src={superloto1} alt="superloto" />
                     </div>
                     <div id="buttons-container" className="flex justify-end items-center content-center w-fit text-[#ff5100]">
-                    <button className="relative before:absolute flex justify-center items-center bg-white before:bg-transparent shadow-none hover:shadow-xl hover:shadow-yellow-900 mx-1 px-4 py-2 rounded-full before:rounded-full hover:rounded-full w-auto before:w-0 hover:before:w-56 h-auto before:h-0 hover:before:h-56 font-sans transition-all duration-300 before:duration-500 overflow-hidden before:ease-out">Süperstar Nedir</button>
-                    <button className="relative before:absolute flex justify-center items-center bg-white before:bg-transparent shadow-none hover:shadow-xl hover:shadow-yellow-900 mx-1 px-4 py-2 rounded-full before:rounded-full hover:rounded-full w-auto before:w-0 hover:before:w-56 h-auto before:h-0 hover:before:h-56 font-sans transition-all duration-300 before:duration-500 overflow-hidden before:ease-out">Süperstar Nedir</button>
-                    <button className="relative before:absolute flex justify-center items-center bg-white before:bg-transparent shadow-none hover:shadow-xl hover:shadow-yellow-900 mx-1 px-4 py-2 rounded-full before:rounded-full hover:rounded-full w-auto before:w-0 hover:before:w-56 h-auto before:h-0 hover:before:h-56 font-sans transition-all duration-300 before:duration-500 overflow-hidden before:ease-out">Süperstar Nedir</button>
+                        <button className="relative before:absolute flex justify-center items-center bg-white before:bg-transparent shadow-none hover:shadow-xl hover:shadow-yellow-900 mx-1 px-4 py-2 rounded-full before:rounded-full hover:rounded-full w-auto before:w-0 hover:before:w-56 h-auto before:h-0 hover:before:h-56 font-sans transition-all duration-300 before:duration-500 overflow-hidden before:ease-out">Süperstar Nedir</button>
+                        <button className="relative before:absolute flex justify-center items-center bg-white before:bg-transparent shadow-none hover:shadow-xl hover:shadow-yellow-900 mx-1 px-4 py-2 rounded-full before:rounded-full hover:rounded-full w-auto before:w-0 hover:before:w-56 h-auto before:h-0 hover:before:h-56 font-sans transition-all duration-300 before:duration-500 overflow-hidden before:ease-out">Süperstar Nedir</button>
+                        <button className="relative before:absolute flex justify-center items-center bg-white before:bg-transparent shadow-none hover:shadow-xl hover:shadow-yellow-900 mx-1 px-4 py-2 rounded-full before:rounded-full hover:rounded-full w-auto before:w-0 hover:before:w-56 h-auto before:h-0 hover:before:h-56 font-sans transition-all duration-300 before:duration-500 overflow-hidden before:ease-out">Süperstar Nedir</button>
                     </div>
                 </div>
+            </div>
+            <div>
+                <h1>SÜPER LOTO HER SALI, PERŞEMBE VE PAZAR GÜNLERİ SAAT 21:30'DA ÇEKİLİR</h1>
             </div>
         </div>
     );
