@@ -7,9 +7,9 @@ function Home() {
     return (
         <> <div className="flex flex-col bg-transparent w-dvw h-full">
             <Helmet>
-                <title>Loto Piyango Online | Piyango, Milli Loto Oyunları, Şanslı Sayılar, Piyango Loto Sonuçları</title>
+                <title>Loto Piyango Online | Sayısal Loto, Süper Loto, On Numara, Milli Piyango Şanslı Numaralar</title>
                 <meta name="keywords" content="loto, piyango, online oyunlar, şans oyunları, sayısal loto, süper loto, on numara, şans topu, milli piyango"></meta>
-                <meta name="description" content="Çılgın Sayısal Loto, Sayısal Loto, Süper Loto, Milli Piyango, Şans Topu ve On numara şans oyunları için talihli sayılar ve sonuçlar" />
+                <meta name="description" content="Çılgın Sayısal Loto, Sayısal Loto, Süper Loto, Milli Piyango, Şans Topu ve On numara şans oyunları için şanslı sayılar ve sonuçlar" />
             </Helmet>
             <LuckyNumbers />
         </div>

@@ -153,8 +153,8 @@ function LuckyNumbers() {
         <>
             <div className='h-full' id='main'>
                 {/**/}
-                <h1 className='mt-[2rem] mb-[2rem] text-[#0173B9] text-center sm:text-5xl' id='main-title'> {currentDate} Loto Piyango Şanslı Sayılar </h1>
-                <h1 className='mb-[1rem] font-bold text-center sm:text-3xl' id='sayisal-title'>Çılgın Sayısal Loto</h1>
+                <h1 className='mt-[2rem] mb-[2rem] text-[#0173B9] text-center sm:text-5xl' id='main-title'> {currentDate} Loto Şanslı Sayılar </h1>
+                <h2 className='mb-[1rem] font-bold text-center sm:text-3xl' id='sayisal-title'>Çılgın Sayısal Loto Şanslı Sayılar</h2>
                 <div className='flex flex-row justify-center gap-[10px] mt-[0px]' id='numbercontainer-sayisal'>
                     {sortedSayisal.map((number) => (
                         <div key={number} id='sayisal-circle' className='content-center bg-[#EA0029] rounded-full w-[35px] h-[35px] font-bold text-[#f8f8f8] text-center lg:text-[17px]'>
@@ -170,7 +170,7 @@ function LuckyNumbers() {
                 {/**/}
 
                 {/**/}
-                <h1 className='mt-[2rem] mb-[1rem] font-bold text-center sm:text-3xl' id='super-title'>Süper Loto</h1>
+                <h2 className='mt-[2rem] mb-[1rem] font-bold text-center sm:text-3xl' id='super-title'>Süper Loto Şanslı Sayılar </h2>
                 <div className='flex flex-row justify-center gap-[10px] mt-[0px]' id='numbercontainer-super'>
                     {sortedSuperNumbers.map((number) => (
                         <div key={number} id='super-circle' className='content-center bg-[#FF5100] rounded-[50px] w-[35px] h-[35px] font-bold text-[#f8f8f8] text-[17px] text-center'>
@@ -180,7 +180,7 @@ function LuckyNumbers() {
                 </div>
                 {/**/}
                 {/**/}
-                <h1 className='mt-[2rem] mb-[1rem] font-bold text-center sm:text-3xl' id='sans-title'>Şans Topu</h1>
+                <h2 className='mt-[2rem] mb-[1rem] font-bold text-center sm:text-3xl' id='sans-title'>Şans Topu Şanslı Sayılar</h2>
                 <div className='flex flex-row justify-center gap-[10px] mt-[0px]' id='numbercontainer-sans'>
                     {sortedSans.map((number) => (
                         <div key={number} id='sans-circle' className='content-center bg-[#E10098] rounded-[50px] w-[35px] h-[35px] font-bold text-[#f8f8f8] text-[17px] text-center'>
@@ -195,7 +195,7 @@ function LuckyNumbers() {
                 </div>
                 {/**/}
                 {/**/}
-                <h1 className='mt-[2rem] mb-[1rem] font-bold text-center sm:text-3xl' id='on-title'>On Numara</h1>
+                <h2 className='mt-[2rem] mb-[1rem] font-bold text-center sm:text-3xl' id='on-title'>On Numara Şanslı Sayılar</h2>
                 <div className='flex flex-row justify-center gap-[10px] mt-[0px]' id='numbercontainer-on'>
                     {sortedOnNumbers.map((number) => (
                         <div key={number} id='on-circle' className='content-center bg-[#A25EB5] rounded-[50px] w-[35px] h-[35px] font-bold text-[#f8f8f8] text-[17px] text-center'>
@@ -206,7 +206,7 @@ function LuckyNumbers() {
                 {/**/}
                 {/**/}
                 <div id='piyango' className='mb-[2rem]'>
-                    <h1 className='mt-[2rem] mb-[1rem] font-bold text-center md:text-3xl' id='on-title'>Milli Piyango</h1>
+                    <h2 className='mt-[2rem] mb-[1rem] font-bold text-center md:text-3xl' id='on-title'>Milli Piyango Şanslı Sayılar</h2>
                     <div className='flex flex-row justify-center gap-[10px] mt-[0px]' id='numbercontainer-piyango'>
                         {lotteryNumbers.map((number) => (
                             <div key={number} id='piyango-circle' className='content-center bg-[#23aae2] rounded-[50px] w-[35px] h-[35px] font-bold text-[#f8f8f8] text-[17px] text-center'>

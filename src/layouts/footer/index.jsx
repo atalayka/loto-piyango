@@ -138,13 +138,17 @@ function Footer() {
                             <li>
                                 <a href="" className="mb-2 font-bold" >Sosyal Medya</a>
                             </li>
-                            <div className="flex flex-row justify-center items-center mt-5 mb-10" id="footer-socials">
-                                <a href="https://www.x.com/lotopiyangoonline" target="_self" class="gtm-footer gtm-footersocial">
-                                    <img src={x} alt="x" loading="lazy" className="mr-5 w-[24px] h-[24px]"></img>
-                                </a>
-                                <a href="https://www.instagram.com/lotopiyangoonline" target="_self" class="gtm-footer gtm-footersocial">
-                                    <img src={instagram} alt="instagram" loading="lazy" className="w-[24px] h-[24px]"></img>
-                                </a>
+                            <div className="flex flex-row justify-center items-center gap-3 mt-5 mb-10" id="footer-socials">
+                                <div className="flex flex-row justify-center items-center hover:bg-black hover: rounded w-[25px] h-[25px]">
+                                    <a href="https://www.x.com/lotopiyangoonline" target="_self" class="gtm-footer gtm-footersocial">
+                                        <img src={x} alt="loto-piyango-x.com" title="milli-piyango-loto-x.com" loading="lazy" className="mr-5 w-[24px] h-[24px]"></img>
+                                    </a>
+                                </div>
+                                <div className="flex flex-row justify-center items-center hover:bg-gradient-to-tr from-orange-300 via-pink-400 to-pink-600 hover:rounded w-[24px] h-[24px]">
+                                    <a href="https://www.instagram.com/lotopiyangoonline" target="_self" class="gtm-footer gtm-footersocial">
+                                        <img src={instagram} alt="loto-piyango-instagram.com" title="milli-piyango-instagram.com" loading="lazy" className="w-[24px] h-[24px]"></img>
+                                    </a>
+                                </div>
                             </div>
                         </ul>
                     </div>

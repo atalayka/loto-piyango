@@ -28,27 +28,24 @@ function NextDraw() {
     }, []);
 
     const getNextTargetTime = (currentTime) => {
-        const day = currentTime.getDay();
+        const day = currentTime.getDay(); // 0: Pazar, 1: Pazartesi, ..., 6: Cumartesi
         const hour = currentTime.getHours();
         const minute = currentTime.getMinutes();
-
+    
         let nextDraw = new Date(currentTime);
-        nextDraw.setHours(21, 30, 0, 0); // Akşam 21:30
-
-        if (
-            (day === 0 && hour >= 21 && minute >= 30) || // Pazar 21:30'dan sonra
-            (day === 6 && hour >= 21 && minute >= 30) || // Cumartesi 21:30'dan sonra
-            (day === 1 && hour >= 21 && minute >= 30) || // Pazartesi 21:30'dan sonra
-            (day === 3 && hour >= 21 && minute >= 30) // Çarşamba 21:30'dan sonra
-        ) {
-            nextDraw.setDate(nextDraw.getDate() + (day === 6 ? 2 : 1)); // Sonraki gün
-        } else if (day === 1 || day === 2) {
-            nextDraw.setDate(nextDraw.getDate() + (3 - day)); // Çarşamba
-        } else if (day === 3 || day === 4 || day === 5) {
-            nextDraw.setDate(nextDraw.getDate() + (6 - day)); // Cumartesi
-        } else if (day === 0) {
-            nextDraw.setDate(nextDraw.getDate() + 1); // Pazartesi
+        nextDraw.setHours(21, 30, 0, 0); // Çekiliş saati: 21:30
+    
+        // Şu anki tarih çekiliş saatini geçtiyse bir sonraki çekilişe geç
+        if (hour > 21 || (hour === 21 && minute >= 30)) {
+            // Bugün 21:30'u geçti, gün kontrolüne geçiyoruz
+            nextDraw.setDate(nextDraw.getDate() + 1); // Önce bir gün ileri al
         }
+    
+        // Şimdiki günü kontrol et ve uygun çekiliş gününe ayarla
+        while (![1, 3, 6].includes(nextDraw.getDay())) {
+            nextDraw.setDate(nextDraw.getDate() + 1); // Çekiliş günlerinden birine ulaşana kadar ileri al
+        }
+    
         return nextDraw;
     };
 
